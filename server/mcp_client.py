@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-"""
-MCP Client
-
-A client that communicates with the MCP Filesystem Server and provides
-a REST API bridge for the frontend application.
-"""
-
 import asyncio
 import json
 import subprocess
