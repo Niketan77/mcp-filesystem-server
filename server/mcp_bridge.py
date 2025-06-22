@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-"""
-MCP Flask Bridge Server (Fixed Version)
-
-A Flask server that bridges between the frontend and the MCP Filesystem Server.
-This provides a REST API interface while using MCP protocol internally.
-"""
-
 from flask import Flask, request, jsonify, send_from_directory, send_file, Response
 from flask_cors import CORS
 import os
