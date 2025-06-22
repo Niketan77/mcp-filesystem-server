@@ -62,7 +62,6 @@ This implementation demonstrates a complete MCP ecosystem:
    - Modern HTML5/CSS3/JavaScript interface
    - Responsive design with professional styling
    - Real-time file management and notifications
-   - Drag & drop file upload functionality
 
 ## 📁 Project Structure
 
