@@ -195,21 +195,6 @@ This test verifies:
 🎉 All MCP tests passed successfully!
 ```
 
-## 🌐 API Endpoints
-
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/` | GET | Frontend interface |
-| `/api/health` | GET | Server health check |
-| `/api/upload` | POST | Upload files |
-| `/api/files` | GET | List files |
-| `/api/files/<filename>` | GET | Get file content |
-| `/api/files/create` | POST | Create file |
-| `/api/files/edit` | PUT | Edit file (manual or AI) |
-| `/api/files/delete` | DELETE | Delete file |
-| `/api/download/<filename>` | GET | Download individual file |
-| `/api/download/all` | GET | Download all files as ZIP |
-
 ## � How to Use
 
 ### 1. Upload Files
