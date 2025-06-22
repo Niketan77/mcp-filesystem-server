@@ -141,8 +141,6 @@ mcp-filesystem-server/
    TOGETHER_AI_API_KEY=your_actual_api_key_here
    ```
 
-> **Note:** The application works fully without an API key - you'll just miss the AI-powered editing features.
-
 ## 🔧 MCP Tools Available
 
 The server implements these MCP tools:
