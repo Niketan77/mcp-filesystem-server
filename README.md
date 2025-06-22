@@ -5,7 +5,7 @@
 ## Demo Video: 
 https://drive.google.com/file/d/18sCyVpAekMkDgUfsKi423VfPN6Rbuj9T/view?usp=drive_link
 
-## 📋 Task Description
+## 📋 Description
 
 This project was built to fulfill the following requirements:
 
