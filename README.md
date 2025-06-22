@@ -141,8 +141,9 @@ mcp-filesystem-server/
 
 ### Getting Together AI API Key (Optional)
 1. Visit [Together AI](https://together.ai) and sign up
-2. Navigate to your dashboard and generate an API key
-3. Add the key to your `.env` file:
+2. Navigate to your dashboard and generate an API key or (https://api.together.ai/settings/api-keys)
+3. create key and copy it
+4. Add the key to your `.env` file:
    ```
    TOGETHER_AI_API_KEY=your_actual_api_key_here
    ```
