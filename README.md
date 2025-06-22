@@ -250,13 +250,6 @@ This test verifies:
 
 ## 🎨 Features Showcase
 
-### Frontend Interface
-- **Modern Design**: Clean, professional UI with gradient headers
-- **MCP Badge**: Displays "Powered by MCP Protocol" badge
-- **Responsive Layout**: Works on desktop and mobile devices
-- **Toast Notifications**: React Toastify-style notifications in top-right corner
-- **Loading States**: Professional loading overlays during AI processing
-
 ### File Operations
 - **Smart Upload**: Handles both folders and individual files
 - **File Type Support**: Text files, code files, configuration files, and more
