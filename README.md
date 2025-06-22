@@ -317,7 +317,7 @@ We welcome contributions! Here's how to get started:
 
 ### Development Setup
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/your-username/mcp-filesystem-server.git`
+2. Clone your fork: `git clone https://github.com/Niketan77/mcp-filesystem-server.git`
 3. Create a virtual environment: `python -m venv venv`
 4. Install dependencies: `pip install -r requirements.txt`
 5. Create a feature branch: `git checkout -b feature-name`
