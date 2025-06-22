@@ -307,25 +307,4 @@ We welcome contributions! Here's how to get started:
 - Add comments for complex logic
 - Maintain consistent indentation
 
-
-## 🙋‍♂️ Support & Contact
-
-### Getting Help
-- **Issues**: Open an issue on GitHub for bugs or feature requests
-- **Discussions**: Use GitHub Discussions for questions and community support
-- **Documentation**: Refer to this README and inline code comments
-
-### Project Status
-- ✅ **Active Development**: Regular updates and maintenance
-- ✅ **Production Ready**: Stable and tested implementation
-- ✅ **MCP Compliant**: Follows official MCP specification
-
-### Acknowledgments
-- **Model Context Protocol**: [MCP Specification](https://modelcontextprotocol.io/)
-- **Together AI**: [Mixtral-8x7B-Instruct](https://together.ai/) for AI capabilities
-- **Flask**: Web framework for the bridge server
-- **Community**: Contributors and users who help improve the project
-  
----
-
 ⭐ **If you find this project helpful, please consider giving it a star on GitHub!**
