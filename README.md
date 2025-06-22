@@ -2,6 +2,9 @@
 
 > A complete **Model Context Protocol (MCP) server** implementation for filesystem operations with AI-powered file editing capabilities.
 
+## Demo Video: 
+https://drive.google.com/file/d/18sCyVpAekMkDgUfsKi423VfPN6Rbuj9T/view?usp=drive_link
+
 ## 📋 Task Description
 
 This project was built to fulfill the following requirements:
