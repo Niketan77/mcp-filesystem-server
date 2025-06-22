@@ -10,7 +10,7 @@ https://drive.google.com/file/d/18sCyVpAekMkDgUfsKi423VfPN6Rbuj9T/view?usp=drive
 This project was built to fulfill the following requirements:
 
 ### Implemented:
-1. **Implement a true Model Context Protocol (MCP) server** for filesystem operations
+1. **Implement a Model Context Protocol (MCP) server** for filesystem operations
 2. **Create file management tools** supporting create, edit, and delete operations
 3. **Develop an MCP client** that communicates using proper MCP protocol
 4. **Build a simple frontend application** for user interaction
