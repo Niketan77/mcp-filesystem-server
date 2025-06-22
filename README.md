@@ -160,7 +160,6 @@ The server implements these MCP tools:
 | `edit_file` | Edit file (manual or AI) | `filename`, `content`/`prompt`, `use_ai` |
 | `delete_file` | Delete a file | `filename` |
 | `read_file` | Read file content | `filename` |
-| `list_files` | List all files | None |
 
 ## 🧪 Testing & Verification
 
