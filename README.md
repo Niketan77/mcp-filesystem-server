@@ -254,26 +254,7 @@ This test verifies:
 - **Natural Language Editing**: Describe changes in plain English
 - **Mixtral Model**: Powered by Mixtral-8x7B-Instruct for high-quality results
 - **Context Aware**: AI understands file types and provides appropriate modifications
-- **Fallback Graceful**: Application works fully even without AI API key
 
-## ⚙️ Configuration
-
-### Environment Variables
-
-Create a `.env` file in the root directory with these options:
-
-```bash
-# AI Service (Optional - for AI editing features)
-TOGETHER_AI_API_KEY=your_api_key_here
-TOGETHER_AI_MODEL=mistralai/Mixtral-8x7B-Instruct-v0.1
-
-# Server Configuration
-PORT=5000
-DEBUG=True
-FILE_STORAGE_PATH=uploaded_files
-MAX_FILE_SIZE=10485760
-CORS_ORIGINS=http://localhost:5000
-```
 
 ### Supported File Types
 
@@ -326,25 +307,6 @@ We welcome contributions! Here's how to get started:
 - Add comments for complex logic
 - Maintain consistent indentation
 
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2025 MCP Filesystem Server
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
 
 ## 🙋‍♂️ Support & Contact
 
@@ -357,7 +319,6 @@ copies or substantial portions of the Software.
 - ✅ **Active Development**: Regular updates and maintenance
 - ✅ **Production Ready**: Stable and tested implementation
 - ✅ **MCP Compliant**: Follows official MCP specification
-- ✅ **Open Source**: MIT licensed for community use
 
 ### Acknowledgments
 - **Model Context Protocol**: [MCP Specification](https://modelcontextprotocol.io/)
