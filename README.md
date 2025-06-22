@@ -20,10 +20,8 @@ This project was built to fulfill the following requirements:
 ### Additional Features Implemented:
 - ✅ **Individual file upload** in addition to folder upload
 - ✅ **Download functionality** for individual files and batch ZIP download
-- ✅ **React Toastify-style notifications** with proper positioning and animations
 - ✅ **Real-time file browser** with file count display
 - ✅ **Drag & drop support** for intuitive file uploads
-- ✅ **Professional UI** with modern design and responsive layout
 
 ## 🎯 Project Overview
 
@@ -103,7 +101,7 @@ mcp-filesystem-server/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/mcp-filesystem-server.git
+   git clone https://github.com/Niketan77/mcp-filesystem-server.git
    cd mcp-filesystem-server
    ```
 
@@ -311,109 +309,6 @@ The application supports text-based files including:
 | **Upload Limit** | Unlimited | No limit on number of files |
 | **AI Timeout** | 30s | Maximum time for AI operations |
 | **Session Storage** | Local | Files stored in `uploaded_files/` |
-
-## � Troubleshooting
-
-### Common Issues & Solutions
-
-#### 1. Server Won't Start
-```bash
-# Check if port 5000 is in use
-netstat -an | grep :5000
-
-# Try a different port
-PORT=3000 python run.py
-
-# Install missing dependencies
-pip install -r requirements.txt
-```
-
-#### 2. AI Features Not Working
-```bash
-# Verify API key is set
-python -c "import os; print(os.getenv('TOGETHER_AI_API_KEY'))"
-
-# Check Together AI service status
-curl -H "Authorization: Bearer YOUR_API_KEY" https://api.together.xyz/models
-```
-
-#### 3. File Upload Issues
-- **Large Files**: Check `MAX_FILE_SIZE` in `.env`
-- **File Type**: Ensure file type is supported (see configuration section)
-- **Permissions**: Verify write permissions to `uploaded_files/` directory
-
-#### 4. Frontend Not Loading
-- Clear browser cache and refresh
-- Check browser console for JavaScript errors
-- Verify server is running on correct port
-
-#### 5. Download Problems
-- Ensure files exist in `uploaded_files/` directory
-- Check file permissions
-- Verify ZIP creation for bulk downloads
-
-### Debug Mode
-Enable detailed logging by setting `DEBUG=True` in `.env`:
-```bash
-DEBUG=True
-```
-
-This provides:
-- Detailed error messages
-- Request/response logging  
-- Automatic server restart on code changes
-- MCP protocol communication logs
-
-## 📋 MCP Protocol Implementation
-
-### Server Capabilities
-```json
-{
-  "protocolVersion": "2024-11-05",
-  "capabilities": {
-    "tools": {"listChanged": true}
-  },
-  "serverInfo": {
-    "name": "filesystem-server",
-    "version": "1.0.0"
-  }
-}
-```
-
-### Available MCP Tools
-```json
-{
-  "tools": [
-    {
-      "name": "create_file",
-      "description": "Create a new file with specified content",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "filename": {"type": "string"},
-          "content": {"type": "string", "default": ""}
-        },
-        "required": ["filename"]
-      }
-    },
-    {
-      "name": "edit_file",
-      "description": "Edit an existing file using AI assistance or direct content replacement",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "filename": {"type": "string"},
-          "prompt": {"type": "string"},
-          "content": {"type": "string"},
-          "use_ai": {"type": "boolean", "default": true}
-        },
-        "required": ["filename"]
-      }
-    }
-    // ... other tools
-  ]
-}
-```
 
 ## 🤝 Contributing
 
