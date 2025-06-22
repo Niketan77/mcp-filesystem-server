@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP Filesystem Operations</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MCP Filesystem Operations</h1>
+            <p>Upload folders and edit files with AI assistance using <strong>Model Context Protocol (MCP)</strong></p>
+            <div class="mcp-badge">
+                <span class="mcp-icon">🔗</span>
+                <span>Powered by MCP Protocol</span>
+            </div>
+        </header>
+
+        <main>
+            <!-- File Upload Section -->
+            <section class="upload-section">
+                <h2>Upload Files</h2>
+                <div class="upload-options">
+                    <div class="upload-area" id="folder-upload-area">
+                        <input type="file" id="folder-upload" webkitdirectory multiple accept="*/*">
+                        <label for="folder-upload" class="upload-label">
+                            <div class="upload-content">
+                                <span class="upload-icon">📁</span>
+                                <span>Click to select folder or drag & drop folder</span>
+                            </div>
+                        </label>
+                    </div>
+                    
+                    <div class="upload-divider">OR</div>
+                    
+                    <div class="upload-area" id="files-upload-area">
+                        <input type="file" id="files-upload" multiple accept="*/*">
+                        <label for="files-upload" class="upload-label">
+                            <div class="upload-content">
+                                <span class="upload-icon">📄</span>
+                                <span>Click to select individual files or drag & drop files</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div id="upload-status"></div>
+            </section>
+
+            <!-- File Browser Section -->
+            <section class="browser-section">
+                <h2>File Browser <span id="file-count" class="file-count"></span></h2>
+                <div class="controls">
+                    <button id="refresh-files">Refresh</button>
+                    <button id="create-file">Create New File</button>
+                    <button id="download-all" class="btn-download">📦 Download All as ZIP</button>
+                    <button id="delete-all-files" class="btn-danger">Delete All Files</button>
+                </div>
+                <div id="file-list" class="file-list"></div>
+            </section>
+
+            <!-- File Editor Section -->
+            <section class="editor-section" id="editor-section" style="display: none;">
+                <h2>File Editor</h2>
+                <div class="editor-header">
+                    <span id="current-file">No file selected</span>
+                    <div class="editor-controls">
+                        <button id="download-current">📥 Download</button>
+                        <button id="save-file">Save</button>
+                        <button id="close-editor">Close</button>
+                    </div>
+                </div>
+                <div class="editor-content">
+                    <div class="prompt-section">
+                        <h3>AI Edit Prompt</h3>
+                        <textarea id="ai-prompt" placeholder="Describe what changes you want to make to this file..."></textarea>
+                        <button id="apply-ai-edit">Apply AI Edit</button>
+                    </div>
+                    <div class="file-content">
+                        <h3>File Content</h3>
+                        <textarea id="file-content" placeholder="File content will appear here..."></textarea>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Loading Overlay -->
+        <div id="loading-overlay" class="loading-overlay" style="display: none;">
+            <div class="loading-content">
+                <div class="spinner"></div>
+                <p id="loading-text">Processing with AI...</p>
+            </div>
+        </div>
+
+        <!-- Modal for Create File -->
+        <div id="create-file-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <h3>Create New File</h3>
+                <input type="text" id="new-filename" placeholder="Enter filename (e.g., example.txt)">
+                <textarea id="new-file-content" placeholder="Enter initial content (optional)"></textarea>
+                <div class="modal-buttons">
+                    <button id="confirm-create">Create</button>
+                    <button id="cancel-create">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notification Toast Container (React Toastify style) -->
+        <div id="toast-container" class="toast-container"></div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
